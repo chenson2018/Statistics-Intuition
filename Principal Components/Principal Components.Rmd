@@ -1,8 +1,8 @@
 ---
 title: "Principal Components"
-output:
-  pdf_document: default
-  html_document: default
+output: 
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
