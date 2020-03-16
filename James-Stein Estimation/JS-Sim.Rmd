@@ -356,7 +356,10 @@ ggplot(data = plot.df, aes(x = Last.Theta, y = Loss.Diff, color = as.factor(Dime
   geom_point() +
   geom_hline(yintercept=0, linetype="solid", color = "red") + 
   scale_color_discrete(name = 'Dimension') + 
-  scale_shape_discrete(name = 'Variable', labels = c("Skewed Theta", "Theta with Mean Zero")) 
+  scale_shape_discrete(name = 'Variable', labels = c("Skewed Theta", "Theta with Mean Zero")) +
+  ggtitle("Difference in Individual Parameter Squared Loss (JS - MLE)") +
+  xlab('Mean of Varying Dimension') +
+  ylab('Difference in Loss (JS - MLE)') 
 ```
 
 
